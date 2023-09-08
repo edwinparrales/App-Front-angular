@@ -1,0 +1,70 @@
+<div class="container-fluid">
+
+  <h3>Formulario de Clientes</h3>
+  <form id="frm-cliente" autocomplete="off">
+    <div class="form-group">
+      <label for="tipo-documento">Tipo Documemto</label>
+      <select name="tipo-documento" id="tipo-documento" class="form-control">
+        <option value="CEDULA">Cedula de ciudadania colombiana</option>
+        <option value="TI">Tarjeta de identidad</option>
+        <option value="CE">Cedula de extranjeria</option>
+        <option value="NIT">Nit</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="documento">Documento:</label>
+      <input class="form-control" type="text" name="documento" id="documento">
+    </div>
+    <div class="form-group">
+      <label for="nombres">Nombres:</label>
+      <input class="form-control" type="text" name="nombres" id="nombres">
+    </div>
+
+
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" name="email">
+    </div>
+
+    <div class="form-group">
+      <label for="num-celular">Numero Celular:</label>
+      <input class="form-control" type="text" name="num-celular" id="num-celular">
+    </div>
+
+    <div class="form-group">
+      <label for="ciudad">Ciudad:</label>
+      <select name="ciudad" id="ciudad" class="form-control">
+        <option value="CALI">Cali</option>
+        <option value="JAMUNDI">Jamundi</option>
+        <option value="PALMIRA">Palmira</option>
+        <option value="YUMBO">Yumbo</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="direccion">Direccion:</label>
+      <input class="form-control" type="text" name="direccion" id="direccion">
+    </div>
+
+
+    <div class="form-group">
+      <label for="barrio">Barrio:</label>
+      <input class="form-control" type="text" name="barrio" id="barrio">
+    </div>
+
+    <div class="form-group">
+      <label for="observaciones">Observaciones:</label>
+      <textarea class="form-control" name="observaciones" id="observaciones" rows="3" cols="50"></textarea>
+
+    </div>
+
+
+    <div class="form-group mt-2">
+      <button type="submit" class="btn btn-primary" id="btn-guardar-cliente">Guardar</button>
+      <!--        <button type="submit" class="btn btn-info disabled" id="btn-modificar-cliente">Modificar</button>-->
+    </div>
+
+  </form>
+
+
+</div>

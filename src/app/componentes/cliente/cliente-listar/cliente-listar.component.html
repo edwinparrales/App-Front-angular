@@ -1,0 +1,38 @@
+<h3>Listado de clientes</h3>
+
+<table id="tabla-clientes" class="table table-striped" style="width:100%">
+  <thead>
+  <tr>
+    <th>Codigo</th>
+    <th>Tipo Dni</th>
+    <th>Documento</th>
+    <th>Nombres</th>
+    <th>Email</th>
+    <th>Telefono</th>
+    <th>Ciudad</th>
+    <th>Direccion</th>
+    <th>Barrio</th>
+    <th>Observaciones</th>
+    <th>Operaciones</th>
+  </tr>
+  </thead>
+  <tbody id="contenido">
+  <tr *ngFor="let cl of clientes">
+    <td>{{cl.id}}</td>
+    <td>{{cl.tipo}}</td>
+    <td>{{cl.documento}}</td>
+    <td>{{cl.nombres}}</td>
+    <td>{{cl.email}}</td>
+    <td>{{cl.telefono}}</td>
+    <td>{{cl.ciudad}}</td>
+    <td>{{cl.direccion}}</td>
+    <td>{{cl.barrio}}</td>
+    <td>{{cl.observaciones}}</td>
+    <td>
+      <a [routerLink]="['/cliente/editar', cl.id]" class="btn btn-danger">Eliminar</a>
+      <a [routerLink]="['/cliente/editar', cl.id]" class="btn btn-info">Editar</a>
+    </td>
+
+  </tr>
+  </tbody>
+</table>
